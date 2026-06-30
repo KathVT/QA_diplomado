@@ -20,6 +20,5 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
           cache: 'maven'
-
       - name: Ejecutar Pruebas Unitarias con Maven
         run: mvn test
