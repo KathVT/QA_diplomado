@@ -2,9 +2,9 @@ name: Java CI con Maven (Agencia de Viajes)
 
 on:
   push:
-    branches: [ "main", "develop", "QA-1-prueba-conexion" ]
+    branches: [ "master", "main", "develop" ]
   pull_request:
-    branches: [ "main", "develop" ]
+    branches: [ "master", "main", "develop" ]
 
 jobs:
   build-and-test:
