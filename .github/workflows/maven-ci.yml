@@ -1,0 +1,24 @@
+name: Java CI con Maven (Agencia de Viajes)
+
+on:
+  push:
+    branches: [ "master", "main", "develop" ]
+  pull_request:
+    branches: [ "master", "main", "develop" ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Copiar el código del repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          cache: 'maven'
+      - name: Ejecutar Pruebas Unitarias con Maven
+        run: mvn test
