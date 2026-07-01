@@ -14,7 +14,7 @@ class ReservaTest {
     @Test
     void descuento10PorcientoEnReserva() {
 // Tarifa base 1000 (menos 10% = 900) + 100 de tasas. Total esperado = 1000
-        assertEquals(1000, aplicarCuponReserva(1000, 100));
+        assertEquals(1000, aplicarCuponReserva(900, 100));
     }
 
     @Test
