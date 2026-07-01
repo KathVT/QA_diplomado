@@ -8,7 +8,7 @@ class ReservaTest {
         if (tarifaBase <= 0) {
             return tasas;
         }
-        return (tarifaBase * 0.80) + tasas;
+        return (tarifaBase * 0.90) + tasas;
     }
 
     @Test
